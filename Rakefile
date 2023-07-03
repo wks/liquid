@@ -81,6 +81,11 @@ namespace :benchmark do
   task :strict do
     ruby "./performance/benchmark.rb strict"
   end
+
+  desc "Run the liquid benchmark with lax parsing measuring seconds per "
+  task :spi do
+    ruby "./performance/benchmark-spi.rb lax"
+  end
 end
 
 namespace :profile do

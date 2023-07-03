@@ -8,6 +8,7 @@ end
 gemspec
 
 group :benchmark, :test do
+  gem 'benchmark'
   gem 'benchmark-ips'
   gem 'memory_profiler'
   gem 'terminal-table'
